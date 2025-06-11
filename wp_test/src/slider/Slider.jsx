@@ -73,7 +73,7 @@ const SlidesPerView = () => {
         {/* Slide 2 */}
         <SwiperSlide>
           <img
-            src="slide2.png"
+            src="hero-bg.png"
             className="w-full h-full object-cover"
             alt="Slide 2"
           />
@@ -82,7 +82,7 @@ const SlidesPerView = () => {
         {/* Slide 3 */}
         <SwiperSlide>
           <img
-            src="slide2.png"
+            src="zig-zag-img-2.png"
             className="w-full h-full object-cover"
             alt="Slide 3"
           />
@@ -91,7 +91,7 @@ const SlidesPerView = () => {
         {/* Slide 4 */}
         <SwiperSlide>
           <img
-            src="slide2.png"
+            src="hero-bg.png"
             className="w-full h-full object-cover"
             alt="Slide 3"
           />
