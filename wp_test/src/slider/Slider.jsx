@@ -82,7 +82,7 @@ const SlidesPerView = () => {
         {/* Slide 3 */}
         <SwiperSlide>
           <img
-            src="slide3.png"
+            src="slide2.png"
             className="w-full h-full object-cover"
             alt="Slide 3"
           />
@@ -90,9 +90,11 @@ const SlidesPerView = () => {
 
         {/* Slide 4 */}
         <SwiperSlide>
-          <div className="w-full h-full flex items-center justify-center bg-gray-400">
-            <h2 className="text-2xl text-white">Slide 4</h2>
-          </div>
+          <img
+            src="slide2.png"
+            className="w-full h-full object-cover"
+            alt="Slide 3"
+          />
         </SwiperSlide>
       </Swiper>
 
