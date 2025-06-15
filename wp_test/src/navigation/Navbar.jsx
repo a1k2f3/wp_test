@@ -3,7 +3,7 @@ import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
 
 function Car(props) {
   return (
-    <div className="transform skew-x-6 hover:-skew-x-6 bg-green-700/20 py-2">
+    <div className="transform  hover:-skew-x-6 bg-green-700/20 py-2 px-5">
       <li className="flex justify-between transform -skew-x-6">{props.item}</li>
     </div>
   );
@@ -16,8 +16,8 @@ const Navbar = () => {
   return (
     <nav className="container mx-auto">
       {/* Notification Bar */}
-      <div className="bg-green-900 text-white text-center py-2 text-sm">
-        LIVE RACE STREAM FROM GATOR NATIONALS IN SARASOTA, FL / <span className="font-bold">WATCH NOW</span>
+      <div className=" w-full bg-white text-black text-center py-2 text-sm">
+        LIVE RACE STREAM FROM GATOR NATIONALS IN SARASOTA, FL / <span className="font-bold text-green-500">WATCH NOW</span>
       </div>
 
       {/* Main Navbar */}
@@ -69,7 +69,7 @@ const Navbar = () => {
       )}
 
       {/* Navigation Links */}
-      <section className="hidden md:flex bg-green-400/60 justify-between py-3 px-20 drop-shadow-md">
+      <section className="hidden md:flex  bg-green-400/60 justify-between py-4 px-30 drop-shadow-md">
         <ul className="flex gap-10 text-lg font-bold text-white">
           {cars.map((car, index) => (
             <Car key={index} item={car} />

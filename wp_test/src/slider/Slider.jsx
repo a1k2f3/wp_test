@@ -36,7 +36,7 @@ const SlidesPerView = () => {
       >
         <SwiperSlide>
           {/* Parent container for the entire slide */}
-          <div className="relative w-full h-full bg-green-800/30">
+          <div className=" w-full h-full bg-green-800/30">
             {/* Background overlay image */}
             <div
               className="absolute inset-0 bg-cover bg-center opacity-40"
@@ -60,11 +60,24 @@ const SlidesPerView = () => {
               <div className="w-full md:w-1/2 relative flex items-center justify-center">
                 {/* Play Button */}
                 <button
-                  onClick={openVideoModal}
-                  className="absolute text-3xl text-white rounded-full p-3 hover:bg-green-700/90 transition"
-                >
-                  <FaPlay />
-                </button>
+  onClick={openVideoModal}
+  className="relative w-64 h-64 rounded-full overflow-hidden group"
+>
+  {/* Background Image */}
+  <img
+    src="/video-thumbnail-img.png"
+    alt="Shoe Thumbnail"
+    className="absolute inset-0 object-cover w-full h-full z-0"
+  />
+
+  {/* Play Icon */}
+  <FaPlay
+    className="text-white text-7xl z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+    transition group-hover:scale-110 bg-black/50 p-7 rounded-full"
+  />
+</button>
+
+
               </div>
             </div>
           </div>
@@ -108,7 +121,7 @@ const SlidesPerView = () => {
             >
               Close
             </button>
-            <video controls autoPlay className="w-full">
+            <video controls autoPlay className="w-full" >
               <source src="https://youtu.be/864B4rzoPog?si=AgBWZY2VAxTT1O-2"  />
               Your browser does not support the video tag.
             </video>
