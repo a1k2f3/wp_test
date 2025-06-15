@@ -31,7 +31,7 @@ const Image = () => {
         {/* Image Section */}
         <div className="relative w-full md:w-2/5 overflow-hidden">
           <img
-            src="/hero-bg.png"
+            src="/zig-zag-img-2.png"
             alt="hero bg"
             className="w-full h-full object-cover"
           />
